@@ -37,7 +37,7 @@
 
     <div class="container">
     	<div class="logo">
-	    	<img src="assets/img/avatar.png" width="100" alt="Dimitri Lameri">
+	    	<img src="assets/img/avatar.png" width="125" alt="Dimitri Lameri">
     	</div>
 		<div class="row centered">
 			<div class="col-lg-8 col-lg-offset-2 w">
@@ -86,7 +86,9 @@
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/bg.jpg", {speed: 500});
+        $(function() {
+            $.backstretch("assets/img/bg.jpg", {speed: 500, centeredX: true, centeredY: true});
+        });
     </script>
 
   </body>
